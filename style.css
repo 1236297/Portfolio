@@ -1,0 +1,88 @@
+.git{
+    position: absolute;
+ 
+    top: 10px; /* Adjust this value as needed */
+    right: 10px; /* Adjust this value as needed */
+    z-index: 1000; /* Ensure the icon stays on top of other elements */
+    text-decoration: none;
+
+}
+.git:hover,
+.git:active {
+  text-decoration: none; /* Remove underline on hover and active states */
+}
+#upwork-link{
+    position: absolute;
+ 
+    top: 10px; /* Adjust this value as needed */
+    right: 50px; /* Adjust this value as needed */
+    z-index: 1000; /* Ensure the icon stays on top of other elements */
+    text-decoration: none;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #F5F7FA; height: 400px;
+}
+body {
+    background-color: #DFF3FE; /* Replace with your desired color */
+  }
+#upwork-link:hover,
+#upwork-link:active {
+  text-decoration: none; /* Remove underline on hover and active states */
+}
+.gitimg{
+    width: 20px;
+    height: 20px
+
+}
+.center{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.showcase{
+   display: grid;
+   grid-template-areas: 'qr news agecal'
+                        ' 3col Landing huddle'
+                        'tip ';
+
+    grid-gap: 10px;
+    padding: 10px;
+    gr
+
+}
+
+.qr{
+    grid-area: qr;
+}
+.tip{
+    grid-area: tip;
+}
+.agecal{
+    grid-area: agecal;
+}
+.col{
+    grid-area: 3col;
+}
+.Landing{
+    grid-area: Landing;
+}
+.huddle{
+    grid-area: huddle;
+}
+.news{
+    grid-area: news;
+}
+
+#image{
+   height: 213.33px;
+    width: 300px;
+}
+footer{
+    background-color: #F5F7FA; height: 400px;
+}
