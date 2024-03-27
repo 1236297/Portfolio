@@ -8,14 +8,16 @@
 </head>
 <body>
     <header >
+      <a href="#showcase" target="_blank" rel="noopener">Projects</a>
     <div class="git">
+     
     <a href="https://github.com/1236297" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
           <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.386.6.11.82-.262.82-.58 0-.287-.01-1.04-.015-2.038-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 1.206.085 1.838 1.236 1.838 1.236 1.07 1.835 2.807 1.305 3.492.997.108-.77.417-1.305.758-1.605-2.658-.303-5.458-1.327-5.458-5.92 0-1.31.465-2.384 1.236-3.227-.125-.303-.54-1.527.116-3.18 0 0 1.01-.322 3.3 1.232a11.55 11.55 0 013.004-.404c1.017.003 2.04.137 3.004.404 2.29-1.554 3.298-1.232 3.298-1.232.658 1.653.243 2.877.118 3.18.77.843 1.234 1.917 1.234 3.227 0 4.604-2.805 5.614-5.47 5.908.43.372.813 1.103.813 2.223 0 1.605-.015 2.896-.015 3.29 0 .32.213.696.825.577C20.565 21.795 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
         </svg>
     </div>
       </a>
-      <a href="https://www.upwork.com/" target="_blank" rel="noopener noreferrer" id="upwork-link">
+      <a href="https://www.upwork.com/freelancers/~017e5b2ca25213dc3a" target="_blank" rel="noopener noreferrer" id="upwork-link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
           <path fill="#6fda44" d="M10.76 15.692L10.748 15.7l-4.024 2.684a.25.25 0 0 1-.397-.198v-5.362c0-.224.112-.437.298-.56l7.142-4.713a.75.75 0 0 1 .866 0l7.142 4.713a.25.25 0 0 1 .117.218v5.49a.25.25 0 0 1-.383.215l-4.12-3.013-3.034 2.028a.25.25 0 0 1-.244 0zm0-6.192L10.748 9.5 10.748 9.5l-4.02 2.684a.25.25 0 0 1-.397-.198V6.624a.25.25 0 0 1 .117-.217l7.142-4.712a.75.75 0 0 1 .866 0l7.142 4.713a.25.25 0 0 1 .117.218v5.49a.25.25 0 0 1-.383.215l-4.12-3.013-3.034 2.027a.25.25 0 0 1-.244 0zm-.113 1.808a.25.25 0 0 1 .23 0l3.248 2.254a.25.25 0 0 1 0 .42l-3.248 2.254a.25.25 0 0 1-.385-.21v-4.507a.25.25 0 0 1 .155-.234z"></path>
         </svg>
@@ -25,7 +27,7 @@
       <h3>I am a Frontend-Developer/ui-Designer</h3>
     </div>
   </header>
-    <div class=" showcase">
+    <div id="showcase">
         <img src="./image/qr.jpg" class="qr" id="image">
         <a href="https://github.com/SultanGbd" target="_blank" rel="noopener noreferrer">QR</a>
         <img src="./image/tip.jpg" class="tip" id="image">
@@ -49,7 +51,10 @@
         <input type="text" placeholder="Enter your name" required>
         <input type="email" placeholder="Enter your email" required>
         <input type="number" placeholder="Enter your phone number" required>
-        <input type="text" placeholder="Enter your message" required>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="4" 
+          type="text" placeholder="Enter your message" required></textarea>
+        </div>
 
         <button type="submit">Submit</button>
       </form>
