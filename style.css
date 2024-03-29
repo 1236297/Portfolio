@@ -1,3 +1,4 @@
+@import url(./font/Inter-VariableFont_slnt\,wght.ttf)
 .git{
     position: absolute;
  
@@ -28,6 +29,7 @@ header{
     background-color: #F5F7FA; height: 400px;
 }
 body {
+    font-family: ;
     background-color: #DFF3FE; /* Replace with your desired color */
   }
 #upwork-link:hover,
@@ -48,20 +50,19 @@ body {
 #showcase{
    display: grid;
    grid-template-areas: 'qr news agecal'
-                        ' 3col Landing huddle'
-                        'tip ';
+                        ' 3col Landing huddle';
+                        /* 'tip '; */
 
     grid-gap: 10px;
-    padding: 10px;
-    
+
 }
 
 .qr{
     grid-area: qr;
 }
-.tip{
+/* .tip{
     grid-area: tip;
-}
+} */
 .agecal{
     grid-area: agecal;
 }
@@ -82,6 +83,13 @@ body {
    height: 213.33px;
     width: 300px;
 } 
+.qrlink{
+  size: 24px;
+  text-decoration: none;
+  padding: 120px;
+
+  grid-area: qr;
+}
 /* FORM */
 footer{
     background-color: #F5F7FA; height: 400px;
