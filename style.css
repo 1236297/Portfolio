@@ -1,4 +1,11 @@
-@import url(./font/Inter-VariableFont_slnt\,wght.ttf)
+@font-face {
+  font-family: Inter;
+  src: url('./font/Inter-VariableFont_slnt\,wght.ttf') ;
+}
+@font-face {
+  font-family: Inter-bold;
+  src: url('./font/static/Inter-ExtraBold.ttf') ;
+}
 .git{
     position: absolute;
  
@@ -25,12 +32,51 @@
     margin: 0;
     padding: 0;
 }
+.topnav_links{
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  flex-direction: row ;
+  
+}
+.topnav_link{
+    display: flex;
+    gap: 1rem;
+    
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .topnav_item{
+    list-style-type: none;
+  }
+
+  .topnav_menu  {
+    
+  
+    @media (width < 40em) {
+      background-color: #DFF3FE;
+      position: fixed;
+      inset: 0;
+      padding: 1.5rem;
+      
+    }
+  }
+
+a{
+    text-decoration: none;
+    color: #60607A;
+    font-family: Inter-bold;
+}
 header{
     background-color: #F5F7FA; height: 400px;
 }
 body {
-    font-family: ;
+
+    font-family: Inter;
+    font-size: 24px;
     background-color: #DFF3FE; /* Replace with your desired color */
+    font-style: bold;
   }
 #upwork-link:hover,
 #upwork-link:active {
@@ -42,6 +88,7 @@ body {
 
 }
 .center{
+    color: #60607A;
     position: absolute;
     top: 150px;
     left: 50%;
@@ -50,7 +97,7 @@ body {
 #showcase{
    display: grid;
    grid-template-areas: 'qr news agecal'
-                        ' 3col Landing huddle';
+                        ' col Landing huddle';
                         /* 'tip '; */
 
     grid-gap: 10px;
@@ -67,7 +114,7 @@ body {
     grid-area: agecal;
 }
 .col{
-    grid-area: 3col;
+    grid-area: col;
 }
 .Landing{
     grid-area: Landing;
@@ -86,10 +133,84 @@ body {
 .qrlink{
   size: 24px;
   text-decoration: none;
-  padding: 120px;
+  padding: 0px 0px 0px 120px;
 
   grid-area: qr;
 }
+.agecallink{
+  size: 24px;
+  text-decoration: none;
+  padding: 0px 0px 0px 60px;
+
+  grid-area: agecal;
+
+}
+.newslink{
+  size: 24px;
+  text-decoration: none;
+  padding: 0px 0px 0px 80px;
+
+  grid-area: news;
+
+}
+.huddlelink{
+  size: 24px;
+  text-decoration: none;
+  padding: 0px 0px 0px 30px;
+
+  grid-area: huddle;
+
+}
+.collink{
+  size: 24px;
+  text-decoration: none;
+  padding: 0px 0px 0px 100px;
+
+
+  grid-area: col;
+}
+.landinglink{
+  size: 24px;
+  text-decoration: none;
+  padding: 0px 0px 0px 80px;
+
+
+  grid-area: col;
+}
+
+
+.Landingdiv{
+  width: 300px;
+  height: 240px;
+  grid-area: Landing;
+}
+.coldiv{
+  width: 300px;
+  height: 240px;
+  grid-area: col;
+}
+.qrdiv{
+  width: 300px;
+  height: 240px;
+  grid-area: qr;
+}
+.agecaldiv{
+  width: 300px;
+  height: 240px;
+  grid-area: agecal;
+}
+.newsdiv{
+  width: 300px;
+  height: 240px;
+  grid-area: news;
+}
+.huddlediv{
+  width: 300px;
+  height: 240px;
+  grid-area: huddle;
+}
+
+
 /* FORM */
 footer{
     background-color: #F5F7FA; height: 400px;
@@ -97,11 +218,11 @@ footer{
 
 form {
     max-width: 400px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 0 0 0 60;
+    
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
   
   .form-group {
@@ -117,10 +238,13 @@ form {
   input[type="email"],
   input[type="number"],
   textarea {
+
+    background-color: #E6E6E6;
     width: 100%;
+    margin: 10;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px;
   }
   
   textarea {
@@ -128,9 +252,10 @@ form {
   }
   
   button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #0056b3;
+    color: #60607A;
     border: none;
+    margin: 10;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -139,3 +264,89 @@ form {
   button:hover {
     background-color: #0056b3;
   }
+  @media only screen and (max-width: 900px)  {
+   
+  .center > h1 {
+    font-size: medium;
+  }
+  
+  #showcase{
+    display: grid;
+    grid-template-areas: 'qr'
+                         'news' 
+                         'agecal'
+                         ' col'
+                         'Landing' 
+                         'huddle';
+                         /* 'tip '; */
+ 
+     grid-gap: 10px;
+ 
+ }
+ 
+    
+  }
+  
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1.5rem;
+}
+.topnav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media (width >= 40em) {
+  .topnav button {
+    display: none;
+  }
+}
+.topnav__open[aria-expanded=true] + .topnav__menu {
+  translate: 0;
+}
+@media (prefers-reduced-motion) {
+  .topnav__open[aria-expanded=true] + .topnav__menu {
+    opacity: 1;
+  }
+}
+.topnav__close {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+}
+.topnav__close img {
+  width: 2.5rem;
+}
+@media (width < 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background-color: hsl(256, 100%, 33%);
+    translate: 100vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav__menu {
+    translate: 0;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+  }
+}
+.topnav__links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (width < 40em) {
+  .topnav__links {
+    flex-direction: column;
+  }
+}
+.topnav__item {
+  list-style-type: none;
+}
